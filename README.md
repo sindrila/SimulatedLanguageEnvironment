@@ -1,7 +1,8 @@
 # Simulated Language Environment 💻
 Simulated Language Environment is a JavaFX application that simulates a programming language environment. It is designed to mimic the behavior of a language. 
 
-<img width="482" alt="Screenshot 2024-01-28 at 20 20 48" src="https://github.com/sindrila/SimulatedLanguageEnvironment/assets/115073810/16a099d3-e584-4768-99d5-2ea862cdf484">
+<img width="784" alt="Screenshot 2024-01-28 at 20 25 14" src="https://github.com/sindrila/SimulatedLanguageEnvironment/assets/115073810/e1848427-fcae-462c-b159-1fabad21ad83">
+
 
 ## Features
 - Manages a program state and implements an execution stack, a symbol table, an output list and a file table that handles the file operations.
