@@ -15,5 +15,4 @@ Simulated Language Environment is a JavaFX application that simulates a programm
 ## Technologies
 
 - The application is written in Java, using JavaFX for the graphical user interface.
-- The application uses Maven for project management and dependencies, ensuring that the project is easy to build and manage.
 
