@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.ProgramExecutorController">
+    <VBox alignment="TOP_CENTER">
+        <Label alignment="CENTER" lineSpacing="1.0" text="Number of program states" textAlignment="CENTER">
+            <font>
+                <Font name="Berlin Sans FB" size="24.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="numberOfProgramStatesTextField" editable="false" prefHeight="22.0" prefWidth="300.0" promptText="Number of program states">
+            <font>
+                <Font name="Berlin Sans FB" size="12.0"/>
+            </font>
+            <VBox.margin>
+                <Insets bottom="5.0" left="75.0" right="75.0" top="5.0"/>
+            </VBox.margin>
+        </TextField>
+
+        <HBox alignment="TOP_CENTER">
+            <VBox alignment="TOP_CENTER">
+                <Label text="Heap">
+                    <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="heapTableView" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="heapAddressTableColumn" editable="false" prefWidth="100" text="Address" />
+                        <TableColumn fx:id="heapValueTableColumn" editable="false" prefWidth="100" text="Value" />
+                    </columns>
+                </TableView>
+            </VBox>
+            <VBox alignment="TOP_CENTER">
+                <HBox.margin>
+                    <Insets left="5.0" right="5.0" />
+                </HBox.margin>
+                <Label text="Output">
+                    <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                    </font>
+                </Label>
+                <ListView fx:id="outputListView" prefHeight="200.0" prefWidth="200.0" />
+            </VBox>
+
+            <VBox alignment="TOP_CENTER">
+                <Label text="Files">
+                    <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                    </font>
+                </Label>
+                <ListView fx:id="fileTableListView" prefHeight="200.0" prefWidth="200.0" >
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin></ListView>
+            </VBox>
+
+            <VBox.margin>
+                <Insets left="5.0" right="5.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="TOP_CENTER">
+            <VBox alignment="TOP_CENTER">
+                    <Label text="ProgramState IDs" >
+                        <font>
+                            <Font name="Berlin Sans FB" size="12.0" />
+                        </font>
+                    </Label>
+                    <ListView fx:id="programStateIdentifiersListView" onMouseClicked="#changeProgramState" prefHeight="200.0" prefWidth="200.0"  />
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+            </VBox>
+
+            <VBox alignment="TOP_CENTER">
+                <Label text="Symbol Table">
+                    <font>
+                        <Font name="Berlin Sans FB" size="12.0"/>
+                    </font>
+                </Label>
+                <TableView fx:id="symbolTableView" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="symbolTableVariableNameTableColumn" editable="false" prefWidth="100.0"
+                                     text="Variable Name"/>
+                        <TableColumn fx:id="symbolTableValueTableColumn" editable="false" prefWidth="100.0"
+                                     text="Value"/>
+                    </columns>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TableView>
+
+                <HBox.margin>
+                    <Insets left="5.0" right="5.0"/>
+                </HBox.margin>
+            </VBox>
+
+            <VBox alignment="TOP_CENTER">
+                    <Label text="Execution Stack">
+                        <font>
+                            <Font name="Berlin Sans FB" size="12.0" />
+                        </font>
+                    </Label>
+                    <ListView fx:id="executionStackListView" prefHeight="200.0" prefWidth="200.0"  />
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+            </VBox>
+
+            <VBox.margin>
+                <Insets left="5.0" right="5.0" />
+            </VBox.margin>
+        </HBox>
+
+        <HBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0">
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="300.0">
+                <Label text="Semaphore Table">
+                    <font>
+                        <Font name="Berlin Sans FB" size="12.0"/>
+                    </font>
+                </Label>
+                <TableView fx:id="semaphoreTableView" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="indexSemaphoreTableColumn" prefWidth="100.0" text="Index"/>
+                        <TableColumn fx:id="valueSemaphoreTableColumn" prefWidth="100.0" text="Value"/>
+                        <TableColumn fx:id="listSemaphoreTableColumn" prefWidth="100.0" text="List of values"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </HBox>
+
+
+        <Button fx:id="runOneStepButton" alignment="TOP_CENTER" mnemonicParsing="false" onMouseClicked="#runOneStep" prefHeight="25.0" prefWidth="100.0" text="Run one step">
+            <font>
+                <Font name="Berlin Sans FB" size="12.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="5.0" left="75.0"/>
+            </VBox.margin>
+        </Button>
+    </VBox>
+</StackPane>
