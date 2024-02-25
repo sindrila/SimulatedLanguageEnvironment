@@ -171,7 +171,7 @@ public class ProgramMenuController {
     }
 
     private Statement createExample5Statement() {
-        StringValue filePath = new StringValue("/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/twoValidValuesInputFile.in");
+        StringValue filePath = new StringValue("src/main/java/LogFiles/twoValidValuesInputFile.in");
         ValueExpression filePathExpression = new ValueExpression(filePath);
         OpenReadFileStatement openReadFileStatement = new OpenReadFileStatement(filePathExpression);
         StringValue intVariableName = new StringValue("testIntVariable");
