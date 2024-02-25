@@ -13,7 +13,7 @@ public class FileStatementTests {
     public void testTwoValidValuesInputFile() {
         ProgramState state = new ProgramState(new CustomStack<>(), new CustomDictionary<>(), new CustomList<>(), new FileTable(), new Heap<>(), new SemaphoreTable());
 
-        StringValue filePath = new StringValue("/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/twoValidValuesInputFile.in");
+        StringValue filePath = new StringValue("./LogFiles/twoValidValuesInputFile.in");
         ValueExpression filePathExpression = new ValueExpression(filePath);
 
         try {
@@ -47,7 +47,7 @@ public class FileStatementTests {
     public void testEmptyInputFile() {
         ProgramState state = new ProgramState(new CustomStack<>(), new CustomDictionary<>(), new CustomList<>(), new FileTable(), new Heap<>(), new SemaphoreTable());
 
-        StringValue filePath = new StringValue("/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/emptyInputFile.in");
+        StringValue filePath = new StringValue("./LogFiles/emptyInputFile.in");
         ValueExpression filePathExpression = new ValueExpression(filePath);
 
         try {
