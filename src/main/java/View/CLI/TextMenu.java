@@ -14,12 +14,6 @@ public class TextMenu {
     }
 
     private void printMenu() {
-//        commands.entrySet().stream()
-//                .sorted(Map.Entry.comparingByKey())
-//                .forEach(entry -> {
-//                    String line = String.format("%4s : %s", entry.getKey(), entry.getValue().getDescription());
-//                    System.out.println(line);
-//                });
         for (Command command : commands.values()) {
             String line = String.format("%4s : %s", command.getKey(), command.getDescription());
             System.out.println(line);
