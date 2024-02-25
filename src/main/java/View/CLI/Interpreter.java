@@ -65,7 +65,7 @@ public class Interpreter {
     }
 
     private Statement createExample5Statement() {
-        StringValue filePath = new StringValue("/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/twoValidValuesInputFile.in");
+        StringValue filePath = new StringValue("src/main/java/LogFiles/twoValidValuesInputFile.in");
         ValueExpression filePathExpression = new ValueExpression(filePath);
         OpenReadFileStatement openReadFileStatement = new OpenReadFileStatement(filePathExpression);
         StringValue intVariableName = new StringValue("testIntVariable");
@@ -223,84 +223,84 @@ public class Interpreter {
         Statement example1 = interpreter.createExample1Statement();
         if (interpreter.typeCheckStatement(example1)) {
             ProgramState programState1 = interpreter.createProgramState(example1);
-            Repository repository1 = new InMemoryRepository(programState1, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/log1.txt");
+            Repository repository1 = new InMemoryRepository(programState1, "src/main/java/LogFiles/log1.txt");
             Controller controller1 = new Controller(repository1);
             menu.addCommand(new RunExampleCommand("1", example1.toString(), controller1));
         }
         Statement example2 = interpreter.createExample2Statement();
         if (interpreter.typeCheckStatement(example2)) {
             ProgramState programState2 = interpreter.createProgramState(example2);
-            Repository repository2 = new InMemoryRepository(programState2, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/log2.txt");
+            Repository repository2 = new InMemoryRepository(programState2, "src/main/java/LogFiles/log2.txt");
             Controller controller2 = new Controller(repository2);
             menu.addCommand(new RunExampleCommand("2", example2.toString(), controller2));
         }
         Statement example3 = interpreter.createExample3Statement();
         if (interpreter.typeCheckStatement(example3)) {
             ProgramState programState3 = interpreter.createProgramState(example3);
-            Repository repository3 = new InMemoryRepository(programState3, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/log3.txt");
+            Repository repository3 = new InMemoryRepository(programState3, "src/main/java/LogFiles/log3.txt");
             Controller controller3 = new Controller(repository3);
             menu.addCommand(new RunExampleCommand("3", example3.toString(), controller3));
         }
         Statement example4 = interpreter.createExample4Statement();
         if (interpreter.typeCheckStatement(example4)) {
             ProgramState programState4 = interpreter.createProgramState(example4);
-            Repository repository4 = new InMemoryRepository(programState4, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/log4.txt");
+            Repository repository4 = new InMemoryRepository(programState4, "src/main/java/LogFiles/log4.txt");
             Controller controller4 = new Controller(repository4);
             menu.addCommand(new RunExampleCommand("4", example4.toString(), controller4));
         }
         Statement example5 = interpreter.createExample5Statement();
         if (interpreter.typeCheckStatement(example5)) {
             ProgramState programState5 = interpreter.createProgramState(example5);
-            Repository repository5 = new InMemoryRepository(programState5, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/log5.txt");
+            Repository repository5 = new InMemoryRepository(programState5, "src/main/java/LogFiles/log5.txt");
             Controller controller5 = new Controller(repository5);
             menu.addCommand(new RunExampleCommand("5", example5.toString(), controller5));
         }
         Statement example6 = interpreter.createExample6Statement();
         if (interpreter.typeCheckStatement(example6)) {
             ProgramState programState6 = interpreter.createProgramState(example6);
-            Repository repository6 = new InMemoryRepository(programState6, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/log6.txt");
+            Repository repository6 = new InMemoryRepository(programState6, "src/main/java/LogFiles/log6.txt");
             Controller controller6 = new Controller(repository6);
             menu.addCommand(new RunExampleCommand("6", example6.toString(), controller6));
         }
         Statement example7 = interpreter.createExample7Statement();
         if (interpreter.typeCheckStatement(example7)) {
             ProgramState programState7 = interpreter.createProgramState(example7);
-            Repository repository7 = new InMemoryRepository(programState7, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/log7.txt");
+            Repository repository7 = new InMemoryRepository(programState7, "src/main/java/LogFiles/log7.txt");
             Controller controller7 = new Controller(repository7);
             menu.addCommand(new RunExampleCommand("7", example7.toString(), controller7));
         }
         Statement example8 = interpreter.createExample8Statement();
         if (interpreter.typeCheckStatement(example8)) {
             ProgramState programState8 = interpreter.createProgramState(example8);
-            Repository repository8 = new InMemoryRepository(programState8, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/log8.txt");
+            Repository repository8 = new InMemoryRepository(programState8, "src/main/java/LogFiles/log8.txt");
             Controller controller8 = new Controller(repository8);
             menu.addCommand(new RunExampleCommand("8", example8.toString(), controller8));
         }
         Statement example9 = interpreter.createExample9Statement();
         if (interpreter.typeCheckStatement(example9)) {
             ProgramState programState9 = interpreter.createProgramState(example9);
-            Repository repository9 = new InMemoryRepository(programState9, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/log9.txt");
+            Repository repository9 = new InMemoryRepository(programState9, "src/main/java/LogFiles/log9.txt");
             Controller controller9 = new Controller(repository9);
             menu.addCommand(new RunExampleCommand("9", example9.toString(), controller9));
         }
         Statement example10 = interpreter.createExample10Statement();
         if (interpreter.typeCheckStatement(example10)) {
             ProgramState programState10 = interpreter.createProgramState(example10);
-            Repository repository10 = new InMemoryRepository(programState10, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/log10.txt");
+            Repository repository10 = new InMemoryRepository(programState10, "src/main/java/LogFiles/log10.txt");
             Controller controller10 = new Controller(repository10);
             menu.addCommand(new RunExampleCommand("10", example10.toString(), controller10));
         }
         Statement example11 = interpreter.createExample11Statement();
         if (interpreter.typeCheckStatement(example11)) {
             ProgramState programState11 = interpreter.createProgramState(example11);
-            Repository repository11 = new InMemoryRepository(programState11, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/log11.txt");
+            Repository repository11 = new InMemoryRepository(programState11, "src/main/java/LogFiles/log11.txt");
             Controller controller11 = new Controller(repository11);
             menu.addCommand(new RunExampleCommand("11", example11.toString(), controller11));
         }
         Statement badTypeCheckStatement = interpreter.badTypeCheckStatement();
         if (interpreter.typeCheckStatement(badTypeCheckStatement)) {
             ProgramState badTypeCheckProgramState = interpreter.createProgramState(badTypeCheckStatement);
-            Repository badTypeCheckRepository = new InMemoryRepository(badTypeCheckProgramState, "/Users/Alex/Documents/Facultate/Semestrul III/Advanced Methods of Programming/ToyLanguageGUI/src/main/java/LogFiles/logBadTypeCheck.txt");
+            Repository badTypeCheckRepository = new InMemoryRepository(badTypeCheckProgramState, "src/main/java/LogFiles/logBadTypeCheck.txt");
             Controller badTypeCheckController = new Controller(badTypeCheckRepository);
             menu.addCommand(new RunExampleCommand("12", badTypeCheckStatement.toString(), badTypeCheckController));
         }
