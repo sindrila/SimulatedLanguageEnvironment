@@ -8,5 +8,4 @@ module org.example.toylanguagecountsemaphore {
     opens Domain to javafx.fxml;
     opens View.GUI to javafx.fxml;
     exports View.GUI;
-//    exports org.example.toylanguagegui;
 }
